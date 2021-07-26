@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
 
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+
+        <!-- icon -->
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    </head>
+
+    <body>
+        <h2>text-format</h2>
+        <div>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+        
+        <div class="wrapper">
+            <div class="left">
+                <textarea id="textbox" placeholder="insert some text!"></textarea>
+                <button id="copy-button" onclick="copyText(document.getElementById('textbox').value)"><span class="iconify" id="copy" data-icon="akar-icons:copy" data-inline="false"></span></button>
+            </div>
+            
+            
+            <div class="right">
+                <button class="text-button" id="white-space" onclick="whiteSpace()">white-space</button>
+                <button class="text-button" id="add-comas" onclick="addComas()">add-comas</button>
+                <button class="text-button" id="make-list" onclick="makeList()">make-list</button>
+                <button class="text-button" id="number" onclick="makeNumberList()">number-list</button>
+                <button class="text-button" id="removepunc" onclick="removePunc()">remove-punctuation</button>
+                <button class="text-button" id="doubleQuotations" onclick="quotationSingle()">single-quotations</button>
+                <button class="text-button" id="singleQuotations" onclick="quotationDouble()">double-quotations</button>
+            </div>
+            
+        </div> 
+        
+
+
+        
+        <script src="script.js"></script>
+    </body>
+
+
+
+
+
+
+
+</html>

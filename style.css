@@ -1,0 +1,69 @@
+*{
+    font-family: 'Courier Prime', monospace;
+    font-weight: normal;
+    
+}
+
+textarea{
+    resize: none;
+    width: 400px;
+    height: 500px;
+    
+}
+
+textarea::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #454545;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 580px;
+    background-color: black;
+    zoom: 140%;
+}
+
+.left{
+    width: 430px;
+    float: left;
+    
+}
+
+.right{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    float: right; 
+}
+
+button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: inherit;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+
+.text-button { position: relative; display: inline-block; transition: all .4s;  cursor: pointer; }
+
+.text-button:after { position: absolute; top: 100%; left: 0; right: 0; margin-top: 3px; height: 2px; background-color: grey; content: ''; transition: opacity .3s, transform .3s, visibility .3s; transition-timing-function: ease-in-out; opacity: 0; transform: translateY(6px); }
+.text-button:hover:after { transform: none; opacity: 1; visibility: visible; }
+
+#copy{
+    position: relative;
+    left: 420px;
+    bottom: 32px;
+    height: 25px;
+    width: 25px;
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+}
